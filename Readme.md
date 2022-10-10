@@ -2,21 +2,12 @@
 
 Tool for PDB generation from IDA Pro database
 
+**Fixed Mixaill's FakePDB issue of analyzed executable must be in the same path as original creation of IDA database.
+This files are modified version of Mixaill's v0.3 release of FakePDB.
+Ref: https://github.com/Mixaill/FakePDB/issues/17**
+
 Supports:
 * IDA >= 7.4
-
-## TODO
-
-* Linux support
-* GHIDRA support
-* Function arguments support
-
-## How to get
-
-* Download latest release from release page: https://github.com/Mixaill/FakePDB/releases
-* Or compile it from sources:
-   * run `<repository_root>/build.ps1`
-   * grab `fakepdb.zip` from `<repository_root>/~build/deploy`
 
 ## How to install
 
