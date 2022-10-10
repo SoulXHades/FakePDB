@@ -12,7 +12,7 @@ Supports:
 ## How to install
 
 * IDA
-  * copy content of `fakepdb.zip/ida` to `<IDA_directory>/plugins`
+  * copy content of `fakepdb.py` and folder `fakepdb` to `<IDA_directory>/plugins`
 
 ## How to use
 
