@@ -19,7 +19,7 @@ Supports:
 There are several features in this plugin:
 
 ### PDB file generation
-  * Open target executable in IDA
+  * Open target executable in IDA or open the existing IDA database in the same folder as the executable
   * `Edit` -> `FakePDB` -> `Generate .PDB file` (or `Ctrl`+`Shift`+`4`)
   * get PDB file from the IDA database directory
 
