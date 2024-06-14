@@ -3,7 +3,7 @@
 Tool for PDB generation from IDA Pro database
 
 **Fixed Mixaill's FakePDB issue of analyzed executable must be in the same path as original creation of IDA database.
-This files are modified version of Mixaill's v0.3 release of FakePDB.
+These files are modified version of Mixaill's v0.3 release of FakePDB.
 Ref: https://github.com/Mixaill/FakePDB/issues/17**
 
 Supports:
