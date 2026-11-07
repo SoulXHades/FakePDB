@@ -19,9 +19,10 @@
 import ida_bytes
 import ida_ida
 import ida_idaapi
-import ida_search
 import ida_ua
 import ida_xref
+
+from fakepdb import ida_compat
 
 class SignatureFinder:
     def __init__(self):
@@ -88,11 +89,11 @@ class SignatureFinder:
         return '? ' * count
 
     def __search_resultcount(self, signature): 
-        search_addr = ida_ida.cvar.inf.min_ea
+        search_addr = ida_compat.get_min_ea()
         search_results = 0
 
         while search_results < 2:
-            search_addr = ida_search.find_binary(search_addr, ida_ida.cvar.inf.max_ea, signature, 16, ida_search.SEARCH_DOWN | ida_search.SEARCH_NEXT)
+            search_addr = ida_compat.find_binary(search_addr, ida_compat.get_max_ea(), signature)
             if search_addr == ida_idaapi.BADADDR:
                 break
             search_results += 1

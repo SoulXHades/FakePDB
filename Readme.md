@@ -64,6 +64,12 @@ where:
 
 * Disable PDB validation in WinDbg http://ntcoder.com/bab/2012/03/06/how-to-force-symbol-loading-in-windbg/
 
+## Changelog
+- v0.3.2
+  - Supports >=IDA 9.0 by fixing IDAPython function names.
+- v0.3.1
+  - Fixed Mixaill's FakePDB issue of analyzed executable must be in the same path as original creation of IDA database.
+
 ## Thanks
 
 Inspired by:
